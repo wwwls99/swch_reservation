@@ -15,23 +15,28 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import Index from "views/Index.js";
+
 import Profile from "views/examples/Profile.js";
 import Maps from "views/examples/Maps.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
+<<<<<<< HEAD
 import Reservation from "views/examples/Reservation.js";
+=======
+import Cars from "views/examples/Cars";
+
+>>>>>>> a6281027ec9a60f2b9350d3b459663b9c460e5f3
 
 var routes = [
-  {
-    path: "/index",
-    name: "Dashboard",
-    icon: "ni ni-tv-2 text-primary",
-    component: Index,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/index",
+  //   name: "Dashboard",
+  //   icon: "ni ni-tv-2 text-primary",
+  //   component: Index,
+  //   layout: "/admin",
+  // },
   {
     path: "/icons",
     name: "Icons",
@@ -62,8 +67,8 @@ var routes = [
   },
   {
     path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
+    name: "Lrgin",
+    icon: "ni ni-Login-25 text-info",
     component: Login,
     layout: "/auth",
   },
@@ -75,11 +80,20 @@ var routes = [
     layout: "/auth",
   },
   {
+<<<<<<< HEAD
     path: "/reservation",
     name: "Reservation",
     icon: "ni ni-circle-08 text-pink",
     component: Reservation,
     layout: "/admin",
   },
+=======
+    path: "/Cars",
+    name: "cars",
+    icon: "ni ni-cart",
+    component: Cars,
+    layout:"/admin",
+  }
+>>>>>>> a6281027ec9a60f2b9350d3b459663b9c460e5f3
 ];
 export default routes;
