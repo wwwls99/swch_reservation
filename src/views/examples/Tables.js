@@ -21,15 +21,9 @@ import {
   Card,
   CardHeader,
   CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
   Pagination,
   PaginationItem,
   PaginationLink,
-  Progress,
   Table,
   Container,
   Row,
@@ -41,8 +35,8 @@ import {
 const Tables = () => {
   return (
     <>
-      
-      <div className="header bg-gradient-info pb-8 pt-5 pt-md-8 r"></div>  
+
+      <div className="header bg-gradient-info pb-8 pt-5 pt-md-8 r"></div>
       <Container className="mt--7" fluid>
         {/* Table */}
         <Row>
@@ -64,17 +58,14 @@ const Tables = () => {
                 </thead>
                 <tbody>
                   <tr className="blockquote text-center" >
-                    
+
                     <td>
-                           2022-02-23
+                      2022-02-23
                     </td>
-                    
+
                     <td>11:00 ~ 13:00</td>
                     <td>
-                     
-                        
-                        pending
-                      
+                      00하0000
                     </td>
                     <td>
                       <div className="avatar-group">
@@ -99,87 +90,73 @@ const Tables = () => {
                         >
                           Ryan Tompson
                         </UncontrolledTooltip>
-                        <a
-                          className="avatar avatar-sm"
-                          href="#pablo"
-                          id="tooltip941738690"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <img
-                            alt="..."
-                            className="rounded-circle"
-                            src={
-                              require("../../assets/img/theme/team-2-800x800.jpg")
-                                .default
-                            }
-                          />
-                        </a>
-                        <UncontrolledTooltip
-                          delay={0}
-                          target="tooltip941738690"
-                        >
-                          Romina Hadid
-                        </UncontrolledTooltip>
-                        <a
-                          className="avatar avatar-sm"
-                          href="#pablo"
-                          id="tooltip804044742"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <img
-                            alt="..."
-                            className="rounded-circle"
-                            src={
-                              require("../../assets/img/theme/team-3-800x800.jpg")
-                                .default
-                            }
-                          />
-                        </a>
-                        <UncontrolledTooltip
-                          delay={0}
-                          target="tooltip804044742"
-                        >
-                          Alexander Smith
-                        </UncontrolledTooltip>
-                        <a
-                          className="avatar avatar-sm"
-                          href="#pablo"
-                          id="tooltip996637554"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <img
-                            alt="..."
-                            className="rounded-circle"
-                            src={
-                              require("../../assets/img/theme/team-4-800x800.jpg")
-                                .default
-                            }
-                          />
-                        </a>
-                        <UncontrolledTooltip
-                          delay={0}
-                          target="tooltip996637554"
-                        >
-                          Jessica Doe
-                        </UncontrolledTooltip>
+
                       </div>
                     </td>
                     <td>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2">20%</span>
-                        <div>
-                          <Progress
-                            max="100"
-                            value="60"
-                            barClassName="bg-danger"
+
+                      <div>
+                        <Badge color="success" pill>
+                          Success
+                        </Badge>
+                      </div>
+
+                    </td>
+
+                  </tr>
+
+
+                </tbody>
+                <tbody>
+                  <tr className="blockquote text-center" >
+
+                    <td>
+                      2022-02-23
+                    </td>
+
+                    <td>11:00 ~ 13:00</td>
+                    <td>
+                      00하0000
+                    </td>
+                    <td>
+                      <div className="avatar-group">
+                        <a
+                          className="avatar avatar-sm"
+                          href="#pablo"
+                          id="tooltip742438047"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          <img
+                            alt="..."
+                            className="rounded-circle"
+                            src={
+                              require("../../assets/img/theme/team-1-800x800.jpg")
+                                .default
+                            }
                           />
-                        </div>
+                        </a>
+                        <UncontrolledTooltip
+                          delay={0}
+                          target="tooltip742438047"
+                        >
+                          Ryan Tompson
+                        </UncontrolledTooltip>
+
                       </div>
                     </td>
-                    
+                    <td>
+
+                      <div>
+                        <Badge color="warning" pill>
+                          no
+                        </Badge>
+                      </div>
+
+                    </td>
+
                   </tr>
-                  
-                  
+
+
                 </tbody>
               </Table>
               <CardFooter className="py-4">
@@ -237,7 +214,7 @@ const Tables = () => {
             </Card>
           </div>
         </Row>
-        
+
       </Container>
     </>
   );

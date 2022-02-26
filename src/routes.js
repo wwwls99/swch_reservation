@@ -23,6 +23,7 @@ import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
 import Cars from "views/examples/Cars";
+import init from "views/examples/init";
 
 
 var routes = [
@@ -63,7 +64,7 @@ var routes = [
   },
   {
     path: "/login",
-    name: "Lrgin",
+    name: "Login",
     icon: "ni ni-Login-25 text-info",
     component: Login,
     layout: "/auth",
@@ -81,6 +82,14 @@ var routes = [
     icon: "ni ni-cart",
     component: Cars,
     layout:"/admin",
+  },
+  {
+    path: "/init",
+    name: "init",
+    icon: "ni ni-app",
+    component: init,
+    layout:"/admin",
   }
+
 ];
 export default routes;
